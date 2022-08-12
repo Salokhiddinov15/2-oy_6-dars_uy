@@ -54,6 +54,9 @@
   position: relative;
 }
 
+.nav_text_link{
+  text-decoration: none;
+}
 .pointer {
   display: flex;
   position: absolute;

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 113px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+.header_logo {
+  width: 235.18px;
+  height: 25px;
+  margin-left: 80px;
+
+}
+
+.nav_main {
+  list-style: none;
+  display: flex;
+  margin-right: 80px;
+  /* position: relative; */
+}
+
+.nav_text {
+  margin-left: 32px;
+  /* font-family: var(--main-font-f); */
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+
+.nav_text_one {
+  color: #333D4B;
+  display: flex;
+  position: relative;
+}
+
+.nav_text_link{
+  text-decoration: none;
+  
+}
+
+.hero{
+  background-image: url('../images/Bitmap\(3\).png');
+  height: 450px;
+  width: 90%;
+  background-size: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.hero_bloc{
+  width: 445px;
+  /* height: 176px; */
+  padding: 137px 0px 0px 85px;
+}
+h1{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.hero_bloc_text{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+#humburger_menu{
+  display: none;
+}
+
+@media only screen and (max-width:768px){
+
+  .header_logo{
+    margin-left: 40px;
+  }
+  #humburger_menu{
+    display: block;
+    margin-right: 40px;
+  }
+
+  .nav_main{
+    display: none;
+  }
+
+  .hero{
+    background-position: center;
+  }
+
+  .hero_bloc{
+    padding: 118px 0px 0px 58px;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+  .hero_bloc_text{
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width:500px){
+
+  .header_logo{
+    margin-left: 24px;
+  }
+
+  #humgurger_menu{
+    margin-right: 24px;
+  }
+
+  .hero{
+    width: 90%;
+    height: 400px;
+  }
+
+  .hero_bloc{
+    width: 279px;
+    text-align: center;
+    padding: 111px 0px 0px 24px;
+  }
+}
+
